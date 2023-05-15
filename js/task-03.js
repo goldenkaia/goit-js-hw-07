@@ -18,4 +18,4 @@ const markup = images
     return `<li><img src="${url}" alt="${alt}" /></li>`;
   })
   .join("");
-galleryEl.innerHTML = markup;
+galleryEl.insertAdjacentHTML("beforeend", markup);
